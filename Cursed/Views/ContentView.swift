@@ -20,11 +20,11 @@ struct ContentView: View {
                 
                 //Questions
                 VStack{
-                    Text("Humanizer")
-                        .font(.system(size: 30, weight: .bold, design: .rounded))
+                    Text("Know you know, if you didn't know")
+                        .font(.system(size: 25, weight: .bold, design: .rounded))
                         .padding()
                     Text(vm.model.quizModel.question)
-                        .font(.system(size: 24, weight: .bold, design: .rounded))
+                        .font(.system(size: 22, weight: .bold, design: .rounded))
                         .padding()
                     Image(vm.model.quizModel.questionImage)
                         .resizable()
@@ -35,11 +35,12 @@ struct ContentView: View {
                         ForEach(vm.model.quizModel.choiceList) { choice in
                             NavigationLink(destination: ResultView(vm: vm, isCorrect: choice.isCorrect)) {
                                 Text("\(Image(systemName: choice.sysImage))\(choice.choiceText )")
-                                    .font(.system(size: 24, weight: .bold, design: .rounded))
-                                    .frame(width: 170, height: 50)
+                                    .font(.system(size: 20, weight: .bold, design: .rounded))
+                                    .frame(width: 140, height: 40)
                                     .background(.pink)
                                     .foregroundColor(.white)
                                     .cornerRadius(5)
+                                    .safeAreaPadding(10)
                             }
                         }
                     }

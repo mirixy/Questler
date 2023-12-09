@@ -24,7 +24,7 @@
 /* Begin PBXFileReference section */
 		EB4FE73E2B245C05000D3020 /* YouTubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeView.swift; sourceTree = "<group>"; };
 		EB4FE7492B249BBA000D3020 /* bing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bing.mp3; sourceTree = "<group>"; };
-		EBF0E7392B23699E00EC0574 /* Cursed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cursed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF0E7392B23699E00EC0574 /* Questler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Questler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF0E73C2B23699E00EC0574 /* CursedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursedApp.swift; sourceTree = "<group>"; };
 		EBF0E73E2B23699E00EC0574 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EBF0E7402B2369A000EC0574 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 		EBF0E73A2B23699E00EC0574 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EBF0E7392B23699E00EC0574 /* Cursed.app */,
+				EBF0E7392B23699E00EC0574 /* Questler.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,9 +125,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EBF0E7382B23699E00EC0574 /* Cursed */ = {
+		EBF0E7382B23699E00EC0574 /* Questler */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EBF0E7472B2369A000EC0574 /* Build configuration list for PBXNativeTarget "Cursed" */;
+			buildConfigurationList = EBF0E7472B2369A000EC0574 /* Build configuration list for PBXNativeTarget "Questler" */;
 			buildPhases = (
 				EBF0E7352B23699E00EC0574 /* Sources */,
 				EBF0E7362B23699E00EC0574 /* Frameworks */,
@@ -137,12 +137,12 @@
 			);
 			dependencies = (
 			);
-			name = Cursed;
+			name = Questler;
 			packageProductDependencies = (
 				EB4FE7472B24624B000D3020 /* YouTubePlayerKit */,
 			);
 			productName = Cursed;
-			productReference = EBF0E7392B23699E00EC0574 /* Cursed.app */;
+			productReference = EBF0E7392B23699E00EC0574 /* Questler.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -176,7 +176,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EBF0E7382B23699E00EC0574 /* Cursed */,
+				EBF0E7382B23699E00EC0574 /* Questler */,
 			);
 		};
 /* End PBXProject section */
@@ -336,7 +336,7 @@
 		EBF0E7482B2369A000EC0574 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon 1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -363,14 +363,14 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		EBF0E7492B2369A000EC0574 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon 1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -397,7 +397,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -413,7 +413,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EBF0E7472B2369A000EC0574 /* Build configuration list for PBXNativeTarget "Cursed" */ = {
+		EBF0E7472B2369A000EC0574 /* Build configuration list for PBXNativeTarget "Questler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EBF0E7482B2369A000EC0574 /* Debug */,
