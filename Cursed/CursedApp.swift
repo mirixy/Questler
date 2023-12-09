@@ -11,7 +11,7 @@ import SwiftUI
 struct CursedApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(vm: QuizEngineVM())
         }
     }
 }
