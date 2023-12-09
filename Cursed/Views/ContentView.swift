@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var vm: QuizEngineVM
-    var columns: [GridItem] = Array(repeating: GridItem(.fixed(140), spacing: 10), count: 3)
+    var columns: [GridItem] = Array(repeating: GridItem(.fixed(165), spacing: 10), count: 3)
     
     var body: some View {
         NavigationStack{
@@ -17,7 +17,7 @@ struct ContentView: View {
                 //background
                 LinearGradient(colors: [.red,.blue], startPoint: .topLeading, endPoint: .bottomLeading)
                     .ignoresSafeArea()
-                
+                   
                 //Questions
                 VStack{
                     Text("Know you know, if you didn't know")
@@ -25,7 +25,7 @@ struct ContentView: View {
                         .padding()
                     Text(vm.model.quizModel.question)
                         .font(.system(size: 22, weight: .bold, design: .rounded))
-                        .padding()
+                        //.padding()
                     Image(vm.model.quizModel.questionImage)
                         .resizable()
                         .scaledToFit()
@@ -36,12 +36,13 @@ struct ContentView: View {
                             NavigationLink(destination: ResultView(vm: vm, isCorrect: choice.isCorrect)) {
                                 Text("\(Image(systemName: choice.sysImage))\(choice.choiceText )")
                                     .font(.system(size: 20, weight: .bold, design: .rounded))
-                                    .frame(width: 140, height: 40)
+                                    .frame(width: 136, height: 40)
                                     .background(.pink)
                                     .foregroundColor(.white)
-                                    .cornerRadius(5)
-                                    .safeAreaPadding(10)
-                            }
+                                    .cornerRadius(10)
+                                    
+                                    //.safeAreaPadding(10)
+                            }.buttonStyle(.plain).safeAreaPadding(10)
                         }
                     }
                 }
