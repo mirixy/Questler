@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var vm: QuizEngineVM
-    var columns: [GridItem] = Array(repeating: GridItem(.fixed(170), spacing: 10), count: 2)
+    var columns: [GridItem] = Array(repeating: GridItem(.fixed(140), spacing: 10), count: 3)
     
     var body: some View {
         NavigationStack{
